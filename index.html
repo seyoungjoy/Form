@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Form</title>
-    
+
 </head>
 
 <body>
     <h1>Choose Your Favorite Language</h1>
     <div class="input-box-wrapper">
-        <label><input type="checkbox" value="javascript" class="checkbox">Javascript</label>
-        <label><input type="checkbox" value="phth
-            on" class="checkbox">Phthon</label>
-        <label><input type="checkbox" value="c#" class="checkbox">C#</label>
+        <div class="box">
+            <input type="checkbox" value="javascript" class="checkbox" id="javascript">
+            <label for="javascript">javascript</label>
+        </div>
+        <div class="box">
+            <input type="checkbox" value="Python" class="checkbox" id="Python">
+            <label for="Python">Python</label>
+        </div>
+        <div class="box">
+            <input type="checkbox" value="C#" class="checkbox" id="C#">
+            <label for="C#">C#</label>
+        </div>
+        <div class="box">
+            <input type="checkbox" value="Java" class="checkbox" id="Java">
+            <label for="Java">Java</label>
+        </div>
     </div>
-    <h2>value</h2>
-    <div class="valueList"></div>
+    <div class="print-values">
+        <div id="valueList"></div>
+    </div>
 
     <script src="./app.js"></script>
 </body>
